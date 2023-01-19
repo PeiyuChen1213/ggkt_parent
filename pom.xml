@@ -11,8 +11,13 @@
     <groupId>com.atguigu</groupId>
     <artifactId>ggkt_parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
     <name>ggkt_parent</name>
     <description>ggkt_parent</description>
+    <modules>
+        <module>model</module>
+        <module>service</module>
+    </modules>
     <properties>
         <skipTests>true</skipTests>
         <java.version>1.8</java.version>
