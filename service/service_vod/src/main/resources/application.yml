@@ -1,0 +1,26 @@
+#端口名字
+server:
+  port: 8301
+spring:
+  #服务名称
+  application:
+    name: service_vod
+  #运行环境
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/glkt_vod
+    username: root
+    password: 1234
+#返回json的全局时间格式
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+mybatis-plus:
+  configuration:
+    #配置表字段和实体类属性名的相关映射 将下划线命名自动与驼峰命名相映射
+    map-underscore-to-camel-case: true
+    #日志输出
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
